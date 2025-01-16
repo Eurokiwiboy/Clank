@@ -37,3 +37,10 @@
   response = "Exercise helps improve mental and physical health."
   evaluation = evaluate(prompt, response)
   print(f"Evaluation: {evaluation}")
+
+- **Example Output**:
+{
+  "length": 7,
+  "tone": "casual",
+  "accuracy": "High"
+}
