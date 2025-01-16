@@ -1,0 +1,8 @@
+{
+  "command": "/simulate",
+  "description": "Simulates how a prompt will execute before deployment.",
+  "parameters": {
+    "example_prompt": "Describe the benefits of exercise.",
+    "output_length": "short"
+  }
+}
