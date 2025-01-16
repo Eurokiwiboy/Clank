@@ -7,3 +7,9 @@
 
 ### Q: Can I add my own commands?
 **A:** Yes! Drop your script in the `plugins/` folder and Clank will automatically detect it.
+
+## Step-by-Step Setup
+1. **Clone the Repository**:
+   Run this command in your terminal:
+   ```bash
+   git clone https://github.com/Eurokiwiboy/Clank.git
