@@ -1,0 +1,12 @@
+{
+  "formal": {
+    "creativity": 3,
+    "formality": 9,
+    "response_length": "long"
+  },
+  "casual": {
+    "creativity": 7,
+    "formality": 2,
+    "response_length": "short"
+  }
+}
