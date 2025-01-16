@@ -14,4 +14,4 @@
   }
 ### /compare
 - **Description**: Compares outputs of multiple prompts with the same configuration.
-- **Example Usage**:
+- **Example Usage**:compare( ["Describe the benefits of exercise.", "Explain AI efficiency."], "short" )
