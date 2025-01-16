@@ -77,8 +77,7 @@ python src/automation/simulate_command.py
 
 ---
 
-### **`/compare`**
-```markdown
+
 ### `/compare`
 - **Description**: Compares the outputs of multiple prompts using the same configuration.
 - **Parameters**: 
