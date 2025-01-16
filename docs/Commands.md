@@ -1,0 +1,14 @@
+### /simulate
+- **Description**: Simulates how a prompt will execute before deployment.
+- **Parameters**:
+  - `example_prompt`: A sample prompt to test.
+  - `output_length`: Desired length of the response (e.g., "short", "detailed").
+- **Example**:
+  ```json
+  {
+    "command": "/simulate",
+    "parameters": {
+      "example_prompt": "Describe the benefits of exercise.",
+      "output_length": "short"
+    }
+  }
