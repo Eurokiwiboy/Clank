@@ -57,26 +57,44 @@ python src/automation/simulate_command.py
   result = simulate("Describe the benefits of exercise.", "short")
   print(result)
 
-/evaluate
-Description: Evaluates the quality of a prompt's response.
-Parameters:
-prompt: The input prompt.
-response: The response to evaluate.
+### `/evaluate`
+- **Description**: Evaluates the quality of a prompt's response based on predefined criteria.
+- **Parameters**: 
+  - `prompt`: The input prompt to evaluate.
+  - `response`: The AI-generated response associated with the prompt.
+- **Example**:
+  ```python
+  from src.automation.evaluate_command import evaluate
+  evaluation = evaluate("Describe the benefits of exercise.", "Exercise improves health.")
+  print(evaluation)
 
-Example:
-from src.automation.evaluate_command import evaluate
-evaluation = evaluate("Describe the benefits of exercise.", "Exercise improves health.")
-print(evaluation)
+{
+    "length": 3,
+    "tone": "casual",
+    "accuracy": "High"
+}
 
-/compare
-Description: Compares the outputs of multiple prompts.
-Parameters:
-prompts: A list of prompts to compare.
-configuration: A string specifying the configuration (e.g., "short").
 
-from src.automation.compare_command import compare
-results = compare(
-    ["Describe the benefits of exercise.", "Explain AI efficiency."],
-    "short"
-)
-print(results)
+---
+
+### **`/compare`**
+```markdown
+### `/compare`
+- **Description**: Compares the outputs of multiple prompts using the same configuration.
+- **Parameters**: 
+  - `prompts`: A list of input prompts to compare.
+  - `configuration`: The configuration string (e.g., "short") specifying how the responses are generated.
+- **Example**:
+  ```python
+  from src.automation.compare_command import compare
+  results = compare(
+      ["Describe the benefits of exercise.", "Explain AI efficiency."],
+      "short"
+  )
+  for prompt, response in results.items():
+      print(f"Prompt: {prompt}\nResponse: {response}\n")
+{
+    "Describe the benefits of exercise.": "Exercise improves health and well-being.",
+    "Explain AI efficiency.": "AI streamlines tasks and boosts productivity."
+}
+
