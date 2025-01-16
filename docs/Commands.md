@@ -12,3 +12,6 @@
       "output_length": "short"
     }
   }
+### /compare
+- **Description**: Compares outputs of multiple prompts with the same configuration.
+- **Example Usage**:
